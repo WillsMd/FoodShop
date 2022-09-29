@@ -122,7 +122,7 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
         "NAME": "foodshop",
-        "PASSWORD": "password10",
+        "PASSWORD": "",
         "USER" : "root",
         "HOST" : "localhost",
     }
