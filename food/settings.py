@@ -77,8 +77,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    #"customer.apps.CustomerConfig",
-    #"shop.apps.ShopConfig",
+    #"customer.apps.customerConfig",
+    #"shop.apps.shopConfig",
     "crispy_forms",
 ]
 
@@ -170,12 +170,10 @@ USE_TZ = True
 STATIC_URL = "static/"
 
 STATICFILES_DIRS=[
-                                       os.path.join(BASE_DIR, 'static/css'),
-                                       os.path.join(BASE_DIR, 'static/js'),
-                                       os.path.join(BASE_DIR, 'static/images'),
-                                       os.path.join(BASE_DIR, 'static/sounds'),
-                                       #os.path.join(BASE_DIR, 
-                                   ]
+                                       os.path.join(BASE_DIR, 'static')
+                                       #os.path.join(BASE_DIR, 'static/js'),
+                                       #os.path.join(BASE_DIR, 'static/images'),
+                         ]
                                       
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL= '/media/'
